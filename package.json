@@ -1,0 +1,21 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "mock food ordering website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css -w --style compressed",
+    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mancjames/ohmyfood.git"
+  },
+  "author": "James Hay",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "bugs": {
+    "url": "https://github.com/mancjames/ohmyfood/issues"
+  },
+  "homepage": "https://github.com/mancjames/ohmyfood#readme"
+}
