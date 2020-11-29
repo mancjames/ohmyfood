@@ -1,0 +1,24 @@
+body {
+    font-family: $font-text;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+h1 {
+    font-family: $font-title;
+    font-weight: 900;
+    font-size: 5rem;
+    font-style: italic;
+}
+
+h5 {
+    font-family: $font-text;
+    font-weight: 300;
+}
+
+button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 2.75rem;
+}
