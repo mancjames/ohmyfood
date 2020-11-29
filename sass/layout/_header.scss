@@ -1,0 +1,12 @@
+.header {
+    background: $color-white;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; 
+    @include header-shadow;  
+    &__logo {
+        height: 2rem;
+    }
+}
