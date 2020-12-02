@@ -11,6 +11,21 @@ h1 {
     font-style: italic;
 }
 
+h2 {
+    font-family: $font-text;
+    font-weight: 700;
+}
+
+h3 {
+    font-family: $font-text;
+    font-weight: 900;
+}
+
+h4 {
+    font-family: $font-text;
+    font-weight: 100;
+}
+
 h5 {
     font-family: $font-text;
     font-size: 1.4rem;
@@ -18,8 +33,7 @@ h5 {
 }
 
 button {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    font-style: italic;
-    font-size: 2.75rem;
+    font-family: $font-text;
+    font-weight: 500;
+    font-size: 1.5rem;
 }

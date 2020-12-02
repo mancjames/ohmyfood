@@ -1,0 +1,6 @@
+.btn {
+    border-radius: 100px;
+    height: 4.5rem;
+    padding: 1rem 2rem;
+    @include button-shadow;
+}
