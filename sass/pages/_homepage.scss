@@ -1,0 +1,13 @@
+.location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 6rem;
+    background-color: $color-gray--dark;
+    &__icon {
+        background-color: red;
+        padding: 2rem;
+        margin: 0rem 1rem;
+    }
+}
