@@ -3,7 +3,7 @@
     height: 4.5rem;
     padding: 1rem 2rem;
     border: none;
-    @include button-shadow;
+    @include shadow;
 }
 
 .btn--gradient {

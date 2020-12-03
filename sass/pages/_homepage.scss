@@ -17,3 +17,39 @@
         text-align: center;
     }
 }
+
+.explanation {
+    &__card {
+        margin: 2rem 0rem 2rem 1rem;
+        height: 6rem;
+        background-color: $color-gray--light;
+        position: relative;
+        &--primarycolor{
+            background-color: rgba($color-primary, 0.1);
+        }
+    }
+    &__card-title {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: 100%;
+    }
+    &__card-number {
+        background-color: $color-primary;
+        color: $color-white;
+        border-radius: 1000px;
+        position: absolute;
+        padding: .25rem .75rem;
+        top: 50%;
+        left: 0%;
+        transform: translate(-50%, -50%)
+    }
+    &__card-icon {
+        color: black;
+        width: 10px;
+        margin: 0rem 2rem;
+        &--primarycolor{
+            color: $color-primary;
+        }
+    }
+}
