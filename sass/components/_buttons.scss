@@ -2,5 +2,11 @@
     border-radius: 100px;
     height: 4.5rem;
     padding: 1rem 2rem;
+    border: none;
     @include button-shadow;
+}
+
+.btn--gradient {
+        color: $color-white;
+        background: linear-gradient(to bottom right, $color-secondary, $color-primary);
 }
