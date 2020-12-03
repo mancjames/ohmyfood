@@ -1,4 +1,4 @@
 .card {
     @include shadow;
-    border-radius: 20px;
+    border-radius: $card-radius;
 }

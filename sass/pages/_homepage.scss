@@ -12,7 +12,7 @@
     background-color: $color-gray--light;
     height: 30rem;
     &__info {
-        @include flex-between;
+        @include flex-center;
         height: 100%;
         text-align: center;
     }
@@ -51,5 +51,20 @@
         &--primarycolor{
             color: $color-primary;
         }
+    }
+}
+
+.restaurant {
+    background-color: $color-gray--light;
+    &__card {
+        height: 15rem;
+        width: 100%;
+        margin: 2rem 0rem;
+    }
+
+    &__image {
+        height: 100%;
+        width: 100%;
+        border-radius: $card-radius;
     }
 }
