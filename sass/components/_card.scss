@@ -1,4 +1,5 @@
 .card {
     @include shadow;
     border-radius: $card-radius;
+    position: relative;
 }
