@@ -7,12 +7,11 @@
     &:hover {
         @include shadow-hover;
     }
-}
-
-.btn--gradient {
+    &--gradient {
         color: $color-white;
         background: linear-gradient(to bottom right, $color-secondary, $color-primary);
         &:hover {
             background: linear-gradient(to bottom right, lighten($color-secondary, 10%), lighten($color-primary, 10%));
         }
+    }
 }

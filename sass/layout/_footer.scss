@@ -1,0 +1,24 @@
+.footer {
+    background-color: darken($color-gray--dark, 70%);
+    color: white;
+    &__title {
+        margin: $title-margin;
+    }
+    &__logo {
+        height: 2rem;
+        filter: invert(93%) sepia(100%) saturate(0%) hue-rotate(248deg) brightness(106%) contrast(106%);
+    }
+    &__nav {
+        list-style-type: none;
+    }
+    &__option {
+        line-height: 2.5rem;
+        &--bold{
+            font-weight: 500;
+        }
+        &-icon{
+            width: 10px;
+            margin-right: 2rem;
+        }
+    }
+}
