@@ -4,9 +4,15 @@
     padding: 1rem 2rem;
     border: none;
     @include shadow;
+    &:hover {
+        @include shadow-hover;
+    }
 }
 
 .btn--gradient {
         color: $color-white;
         background: linear-gradient(to bottom right, $color-secondary, $color-primary);
+        &:hover {
+            background: linear-gradient(to bottom right, lighten($color-secondary, 10%), lighten($color-primary, 10%));
+        }
 }
