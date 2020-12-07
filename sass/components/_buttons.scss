@@ -4,6 +4,8 @@
     padding: 1rem 2rem;
     border: none;
     @include shadow;
+    transition: all 500ms;
+    outline: none;
     &:hover {
         @include shadow-hover;
     }
