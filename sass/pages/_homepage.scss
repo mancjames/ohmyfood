@@ -31,6 +31,10 @@
         margin: 2rem 0rem 2rem 1rem;
         height: 6rem;
         background-color: $color-gray--light;
+        @media screen and (min-width: map-get($breakpoints, tablet)){
+            width: 80%;
+            margin: 3rem auto;
+        }
         &--primarycolor{
             background-color: rgba($color-primary, 0.1);
         }
@@ -66,11 +70,26 @@
 
 .restaurant {
     background-color: $color-gray--light;
+    &__container {
+        @media screen and (min-width: map-get($breakpoints, tablet)){
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+        }
+    }
+    &__title {
+        margin: $title-margin;
+    }
     &__card {
         height: 20rem;
         width: 100%;
         max-width: 30rem;
         margin: 2rem 0rem;
+            @media screen and (min-width: map-get($breakpoints, tablet)){
+                margin: 1.5rem;
+                width: 45%;
+            }
         &-image {
             height: 100%;
             width: 100%;
