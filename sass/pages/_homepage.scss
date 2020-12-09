@@ -34,6 +34,7 @@
         @media screen and (min-width: map-get($breakpoints, tablet)){
             width: 80%;
             margin: 3rem auto;
+            max-width: 1000px;
         }
         &--primarycolor{
             background-color: rgba($color-primary, 0.1);
@@ -72,23 +73,26 @@
     background-color: $color-gray--light;
     &__container {
         @media screen and (min-width: map-get($breakpoints, tablet)){
-            display: flex;
+            @include flex-center;
             flex-wrap: wrap;
-            align-items: center;
-            justify-content: space-around;
+            padding: 2rem 0rem;
         }
-    }
-    &__title {
-        margin: $title-margin;
     }
     &__card {
         height: 20rem;
         width: 100%;
-        max-width: 30rem;
+        max-width: 35rem;
         margin: 2rem 0rem;
             @media screen and (min-width: map-get($breakpoints, tablet)){
-                margin: 1.5rem;
+                margin: 1.2rem;
                 width: 45%;
+            }
+            @media screen and (min-width: map-get($breakpoints, large-tablet)){
+                height: 25rem;
+                margin: 1.4rem;
+            }
+            @media screen and (min-width: map-get($breakpoints, desktop)){
+                margin: 2rem;
             }
         &-image {
             height: 100%;
@@ -107,6 +111,10 @@
             margin: auto;
             border-radius: 5px;
             @include flex-center;
+            @media screen and (min-width: map-get($breakpoints, large-tablet)){
+                height: 3.5rem;
+                width: 9rem;
+            }
         }
         &-label {
             @include flex-between;
@@ -118,6 +126,9 @@
             top: 75%;
             left: 0;
             padding: $label-padding;
+            @media screen and (min-width: map-get($breakpoints, large-tablet)){
+                height: 6.5rem;
+            }
         }
         &-icon {
             color: white;
