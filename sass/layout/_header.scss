@@ -9,4 +9,11 @@
     &__logo {
         height: 2.5rem;
     }
+    &__return {
+        transform: translate(50%, -50%);
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        font-size: 2rem;
+    }
 }
