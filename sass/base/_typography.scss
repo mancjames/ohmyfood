@@ -4,13 +4,16 @@ body {
     font-weight: 100;
 }
 
+/* Menu restaurant name */
+
 h1 {
     font-family: $font-title;
-    font-weight: 900;
-    font-size: 5rem;
+    font-weight: 300;
+    font-size: 2rem;
     font-style: italic;
 }
 
+/* section titles*/
 h2 {
     font-family: $font-text;
     font-weight: 700;
@@ -25,6 +28,8 @@ h4 {
     font-family: $font-text;
     font-weight: 100;
 }
+
+/* menu section titles */
 
 h5 {
     font-family: $font-text;
