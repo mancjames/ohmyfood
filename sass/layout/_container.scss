@@ -14,9 +14,10 @@
             padding: 3rem;
         }
     }
-    &--menu-title {
-        width: 100%;
+    &--menu {
         padding: 2rem;
+        &-title {
         @include flex-between;
+        }
     };
 }

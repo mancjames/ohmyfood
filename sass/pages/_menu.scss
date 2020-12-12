@@ -13,7 +13,7 @@
     }
 
     /* title section */ 
-    
+
     &__title{
         background-color: $color-gray--light;
         position: relative;
@@ -36,6 +36,48 @@
                 color: transparent;
             }
         }
+    }
+
+    /* entree */
+
+    &__entree{
+        &-title {
+            display: inline-block;
+                p {
+                text-transform: uppercase;
+                padding-bottom:10px;
+                position: relative;
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        width: 60%;
+                        bottom: 0;
+                        left: 0;
+                        border-bottom: 2px solid $color-tertiary;
+                    }
+                }
+        }
+        &-card {
+            background-color: $color-white;
+            margin: $title-margin;
+            
+            &-meal {
+                padding: 1rem;
+
+                &-item {
+                    margin: .5rem 0;
+                }
+                &-desc {
+                    @include flex-between;
+                    font-size: 1.2rem;
+                    &-price {
+                        font-weight: 500;
+                    }
+                }
+            } 
+        }
+
+        
     }
 }
     
