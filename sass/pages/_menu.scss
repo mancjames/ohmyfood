@@ -38,9 +38,9 @@
         }
     }
 
-    /* entree */
+    /* menu choices*/
 
-    &__entree{
+    &__choices{
         &-title {
             display: inline-block;
                 p {
@@ -76,8 +76,12 @@
                 }
             } 
         }
+    }
 
-        
+    /* Order */
+
+    &__order {
+        @include flex-center;
     }
 }
     

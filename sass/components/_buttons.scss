@@ -16,4 +16,8 @@
             background: linear-gradient(to bottom right, lighten($color-secondary, 10%), lighten($color-primary, 10%));
         }
     }
+    &--order {
+        height: 5rem;
+        padding: 1rem 7rem;
+    }
 }

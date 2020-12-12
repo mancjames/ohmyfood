@@ -19,5 +19,8 @@
         &-title {
         @include flex-between;
         }
+        &-order {
+            padding: 2rem 2rem 6rem 2rem;
+        }
     };
 }
