@@ -89,6 +89,11 @@
                 &-desc {
                     @include flex-between;
                     font-size: 1.2rem;
+                    &-item {
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    }
                     &-price {
                         font-weight: 700;
                     }
@@ -115,9 +120,10 @@
                     }
                 }
             }
+                
                 &:hover > &--select {
                     width: 6rem;
-                    transform: scaleX(1)
+                    transform: scaleX(1);
                 }
             } 
         }
