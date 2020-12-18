@@ -58,6 +58,14 @@
                 }
         }
         &-card {
+            @for $i from 1 through 3 {
+                &--#{$i} {
+                    animation-name: fade-in; 
+                    animation-duration: 750ms;
+                    animation-fill-mode: both;
+                    animation-delay: 1s * $i;
+            }
+        }
             background-color: $color-white;
             margin: 1.5rem 0rem;
                 @media screen and (min-width: map-get($breakpoints, large-tablet)){
