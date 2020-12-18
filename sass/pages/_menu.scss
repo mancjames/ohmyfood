@@ -64,20 +64,24 @@
                     animation-duration: 750ms;
                     animation-fill-mode: both;
                     animation-delay: 1s * $i;
+                }
             }
-        }
             background-color: $color-white;
             margin: 1.5rem 0rem;
                 @media screen and (min-width: map-get($breakpoints, large-tablet)){
                     margin: 2.5rem 0rem;
                 }
             &-meal {
-                padding: 1rem;
-                @media screen and (min-width: map-get($breakpoints, tablet)) {
-                    padding: 1rem 2rem;
-                }
-                @media screen and (min-width: map-get($breakpoints, large-tablet)) {
-                    padding: 1.5rem 2rem;
+                display: flex;
+                &-info {
+                    padding: 1rem;
+                    @media screen and (min-width: map-get($breakpoints, tablet)) {
+                        padding: 1rem 2rem;
+                    }
+                    @media screen and (min-width: map-get($breakpoints, large-tablet)) {
+                        padding: 1.5rem 2rem;
+                    }
+                    width: 100%;
                 }
                 &-item {
                     margin: .5rem 0;
@@ -88,6 +92,25 @@
                     &-price {
                         font-weight: 700;
                     }
+                }
+                &--select {
+                    height: 100%;
+                    background-color: $color-tertiary;
+                    color: $color-white;
+                    border-radius: $card-radius--right;
+                    width: 6rem;
+                    position: relative;
+                    display: none;
+                    &-icon {
+                        position: absolute;
+                        font-size: 2rem;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                    }
+                }
+                &:hover > &--select {
+                    display: block !important;
                 }
             } 
         }
