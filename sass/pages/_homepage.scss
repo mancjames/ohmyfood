@@ -1,3 +1,22 @@
+/* loading animation */
+main,
+.location {
+    animation: fade-in 4s ease-in;
+}
+
+.loader {
+    position: absolute;
+    z-index: 1001;
+    left: 50%;
+    border: 16px solid $color-secondary;
+    border-top: 16px solid $color-primary;
+    border-radius: 50%;
+    width: 40rem;
+    height: 40rem;
+    animation: spin 4s linear;
+    opacity: 0;
+}
+
 /* location section */
 
 .location {
