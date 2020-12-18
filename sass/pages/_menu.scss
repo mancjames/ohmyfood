@@ -94,13 +94,18 @@
                     }
                 }
                 &--select {
+                    transform: scaleX(0);
+                    transform-origin: right;
+                    transition: all 400ms;
+                    &-container{
                     height: 100%;
+                    width: 100%;
+                    overflow: hidden;
                     background-color: $color-tertiary;
                     color: $color-white;
                     border-radius: $card-radius--right;
-                    width: 6rem;
                     position: relative;
-                    display: none;
+                    display: block;
                     &-icon {
                         position: absolute;
                         font-size: 2rem;
@@ -109,8 +114,10 @@
                         transform: translate(-50%,-50%);
                     }
                 }
+            }
                 &:hover > &--select {
-                    display: block !important;
+                    width: 6rem;
+                    transform: scaleX(1)
                 }
             } 
         }
