@@ -73,6 +73,7 @@
                 }
             &-meal {
                 display: flex;
+                backface-visibility: hidden;
                 &-info {
                     padding: 1rem;
                     @media screen and (min-width: map-get($breakpoints, tablet)) {
@@ -88,7 +89,6 @@
                     }
                     &-desc {
                         @include flex-between;
-                        
                         &-text {
                             min-width: 0;
                         }
@@ -107,6 +107,8 @@
                     transform: scaleX(0);
                     transform-origin: right;
                     transition: all 400ms;
+                    backface-visibility: hidden;
+                    width: 0rem;
                     &-container{
                     height: 100%;
                     width: 100%;
