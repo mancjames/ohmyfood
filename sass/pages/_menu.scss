@@ -86,6 +86,10 @@
                     min-width: 0;
                     &-item {
                         margin: .5rem 0;
+                        width: 18rem;
+                        @media screen and (min-width: map-get($breakpoints, tablet)) {
+                            width: auto;
+                        }
                     }
                     &-desc {
                         @include flex-between;
