@@ -13,7 +13,7 @@
     border-radius: 50%;
     width: 20rem;
     height: 20rem;
-    animation: spin 1300ms linear;
+    animation: spin 1100ms linear;
     opacity: 0;
     @media screen and (min-width: map-get($breakpoints, large-tablet)){
         width: 30rem;
