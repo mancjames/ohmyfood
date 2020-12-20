@@ -6,6 +6,7 @@
     @include shadow;
     transition: all 500ms;
     outline: none;
+    cursor: pointer;
     &:hover {
         @include shadow-hover;
     }
