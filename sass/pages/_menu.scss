@@ -82,20 +82,25 @@
                         padding: 1.5rem 2rem;
                     }
                     width: 100%;
-                }
-                &-item {
-                    margin: .5rem 0;
-                }
-                &-desc {
-                    @include flex-between;
-                    font-size: 1.2rem;
+                    min-width: 0;
                     &-item {
-                        overflow: hidden;
-                        white-space: nowrap;
-                        text-overflow: ellipsis;
+                        margin: .5rem 0;
                     }
-                    &-price {
-                        font-weight: 700;
+                    &-desc {
+                        @include flex-between;
+                        
+                        &-text {
+                            min-width: 0;
+                        }
+                        &-text > p {
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            
+                        }
+                        &-price p{
+                            font-weight: 700;
+                        }
                     }
                 }
                 &--select {
@@ -120,11 +125,13 @@
                     }
                 }
             }
-                
+                    
                 &:hover > &--select {
                     width: 6rem;
                     transform: scaleX(1);
                 }
+
+                
             } 
         }
     }

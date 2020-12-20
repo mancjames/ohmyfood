@@ -1,7 +1,7 @@
 /* loading animation */
 .loader-background,
 .location {
-    animation: fade-in 4s ease-in;
+    animation: fade-in 2700ms ease-in;
 }
 
 .loader {
@@ -11,10 +11,14 @@
     border: 16px solid $color-secondary;
     border-top: 16px solid $color-primary;
     border-radius: 50%;
-    width: 40rem;
-    height: 40rem;
-    animation: spin 4s linear;
+    width: 20rem;
+    height: 20rem;
+    animation: spin 1300ms linear;
     opacity: 0;
+    @media screen and (min-width: map-get($breakpoints, large-tablet)){
+        width: 30rem;
+        height: 30rem;
+    }
 }
 
 /* location section */

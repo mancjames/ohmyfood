@@ -25,8 +25,18 @@
         opacity: 1;
     }
 
-    100% {
+    80% {
         transform: translateX(-50%) rotate(360deg);
+        opacity: 0.9;
+    }
+
+    81% {
+        transform: translateX(-50%) rotate(0deg);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translateX(-50%) rotate(30deg);
         opacity: 0;
     }
 }
