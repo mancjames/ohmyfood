@@ -107,8 +107,8 @@
                     transform: scaleX(0);
                     transform-origin: right;
                     transition: all 400ms;
-                    backface-visibility: hidden;
                     width: 0rem;
+                    overflow: hidden;
                     &-container{
                     height: 100%;
                     width: 100%;
@@ -118,19 +118,25 @@
                     border-radius: $card-radius--right;
                     position: relative;
                     display: block;
-                    &-icon {
-                        position: absolute;
-                        font-size: 2rem;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%,-50%);
-                    }
+                    
+                        i {
+                            position: absolute;
+                            font-size: 2rem;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(50%,-50%) rotate(0deg);
+                        }
+                    
                 }
             }
                     
                 &:hover > &--select {
                     width: 6rem;
                     transform: scaleX(1);
+                    i {
+                        transform: translate(-50%,-50%) rotate(360deg);
+                        transition: transform 400ms ease-in-out;
+                    }
                 }
 
                 
